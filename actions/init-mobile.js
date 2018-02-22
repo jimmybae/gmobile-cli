@@ -31,8 +31,7 @@ module.exports = () => {
       }
       let pluginAdd = execSync(`cordova plugin add ${pluginPrefix}.${plugin} --searchpath node_modules`);
       console.log(chalk.gray(pluginAdd.toString()));
-      console.log();
+      logger.log(`${pluginPrefix}.${plugin} plugins addtion succeeded.`);
     });
-    logger.log('Custom plugins addtion succeeded.');
   });
 };
