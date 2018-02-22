@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="com.poscoict.mobile.nfc"
+      version="1.0.2">
+    <name>nfc</name>
+    <description>Glue Mobile Cordova NFC Plugin</description>
+    <license></license>
+    <keywords>cordova,nfc</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <engines>
+        <engine name="cordova-android" version=">=6.3.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <info>
+            NFC Plugin
+        </info>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NFC">
+                <param name="android-package" value="com.poscoict.mobile.nfc.GlueNFC" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-feature android:name="android.hardware.nfc" android:required="false" />
+            <uses-permission android:name="android.permission.NFC" />
+        </config-file>
+
+        <lib-file src="src/android/libs/gluemobile-nfc-1.0.0.jar" />
+
+        <!-- android specific file apis -->
+        <js-module src="www/android/nfc.js" name="">
+            <clobbers target="navigator.nfc" />
+        </js-module>
+    </platform>
+</plugin>
