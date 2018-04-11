@@ -6,7 +6,7 @@ const logger = require('../utils/logger.js');
 const files = require('../utils/files.js');
 const questions = require('../utils/questions.js');
 
-const wwwDir = 'www/dist';
+const wwwDir = 'www';
 const templateDir = path.normalize(`${__dirname}/../templates/${wwwDir}`);
 
 module.exports = (resolve = undefined, reject = undefined) => {
