@@ -25,8 +25,48 @@ $ gmobile -v
 * Initialize the gmobile project resource.
 ```sh
 $ gmbile init
-? Directory www is not empty. Replace the contents? (Y/n)
+? Directory web is not empty. Replace the contents? (Y/n)
 ......
 ```
+
+## Example
+1. Create cordova project
+```sh
+$ cordova create gmobile-cli-test com.gmobile.cli.app GmobileCliTest
+Creating a new cordova project.
+$ cd gmobile-cli-test
+```
+2. GMobile initialization
+```sh
+$ gmobile init
+? Directory web is not empty. Replace the contents? Yes
+[info] Web resource initialization succeeded.
+? Choose the costom plugins to apply.
+......
+```
+3. Delete an existing web resource
+```sh
+$ cd www
+$ rm -r *
+$ cd ..
+```
+4. Web resource build
+```sh
+$ cd web
+$ npm install
+$ npm run build
+$ cd ..
+```
+5. Add platforms
+```sh
+$ cordova platforms add android
+```
+6. Android Studio import & run
+
+## Issue
+* webpack build 시점
+  1. web -> www (now : cordova.js가 있다고 가정하고 webpack build를 해야하는데 에러가 안날까? 뭐 방법이 있긴 하겠지)
+  2. platforms/android/app/src/main/assets/www (but 이렇게 하면 android, ios 두개의 소스가 관리되어야 하는 거잖어)
+
 ## License
 MIT
