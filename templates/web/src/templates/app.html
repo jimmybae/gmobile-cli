@@ -1,0 +1,28 @@
+<div class="alert alert-primary mt-2 text-center" role="alert">
+  TODO (webpack + Backbone.js)
+</div>
+
+<div class="row align-items-center mb-2">
+  <div class="col-3 text-left">
+    <span class="icon-btn all-toggle" id="all-toggle"><%=octicons.inbox.toSVG({class: 'octicon-24'})%></span>
+    <span class="all-toggle">All</span>
+  </div>
+  <div class="col-9 text-right header-nav">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header bg-default p-2">
+    <div class="row align-items-center">
+      <div class="col-9">
+        <input type="text" id="title" name="title" class="form-control form-control-sm" placeholder="todo" aria-describedby="tip1" />
+      </div>
+      <div class="col-3 text-right pl-0">
+        <span class="icon-btn" id="add"><%=octicons['diff-added'].toSVG({class: 'octicon-24'})%></span>
+        <span class="icon-btn" id="completed-del"><%=octicons.checklist.toSVG({class: 'octicon-24'})%></span>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group list-group-flush" id="list">
+  </ul>
+</div>

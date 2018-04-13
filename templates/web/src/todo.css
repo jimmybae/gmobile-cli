@@ -1,0 +1,18 @@
+.completed {
+  text-decoration: line-through;
+}
+.title {
+  font-size: 21px;
+}
+.hidden {
+  display: none;
+}
+.icon-btn svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.octicon-24 {
+  width: 24px;
+  height: 24px;
+  fill: gray;
+}
