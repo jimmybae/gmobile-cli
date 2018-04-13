@@ -2,12 +2,12 @@ const chalk = require('chalk');
 
 exports.createWebFolder = [{
   name: 'answer',
-  message: `Directory ${chalk.yellow('www')} is not exist. Create the directory?`,
+  message: `Directory ${chalk.yellow('web')} is not exist. Create the directory?`,
   type: 'confirm'
 }];
 exports.replaceWebFolder = [{
   name: 'answer',
-  message: `Directory ${chalk.yellow('www')} is not empty. Replace the contents?`,
+  message: `Directory ${chalk.yellow('web')} is not empty. Replace the contents?`,
   type: 'confirm'
 }];
 
