@@ -72,6 +72,8 @@ $ cordova platforms add android
 ```
 6. Android Studio import & run
 
+<img src="./screenshots/gmobile.v2.png" style="width: 300px; border: 1px solid gray;">
+
 ## Example `gmobile.v1`
 0. Install
 ```sh
@@ -92,7 +94,7 @@ $ cd ..
 3. GMobile initialization
 ```sh
 $ gmobile init
-? Directory web is not empty. Replace the contents? Yes
+? Directory www is not empty. Replace the contents? Yes
 [info] Web resource initialization succeeded.
 ? Choose the costom plugins to apply.
 ......
@@ -111,6 +113,8 @@ Installing "cordova-plugin-dialogs" for android
 $ cordova platforms add android
 ```
 6. Android Studio import & run
+
+<img src="./screenshots/gmobile.v1.png" style="width: 300px; border: 1px solid gray;">
 
 ## Issue
 * webpack build 시점
