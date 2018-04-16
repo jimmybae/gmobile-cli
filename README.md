@@ -5,8 +5,13 @@ gmobile-cli is tool to create gmobile project in terminal.
 [Node.js](https://nodejs.org/ko/), [Apache Cordova](https://cordova.apache.org/)
 
 ## Installation
+* `webpack + backbone.js` The temporary name is gmobile v2. I used webpack and backbone.js for web resources.
 ```sh
-$ git install -g https://github.com/jimmybae/gmobile-cli.git
+$ npm install -g https://github.com/jimmybae/gmobile-cli.git
+```
+* `gmobile v1` I used gmobile for web resources.
+```sh
+$ npm install -g https://github.com/jimmybae/gmobile-cli.git#gmobile.v1
 ```
 
 ## Usage
@@ -29,14 +34,24 @@ $ gmbile init
 ......
 ```
 
-## Example
+## Example `webpack + backbone.js`
+0. Install
+```sh
+$ npm install -g https://github.com/jimmybae/gmobile-cli.git
+```
 1. Create cordova project
 ```sh
 $ cordova create gmobile-cli-test com.gmobile.cli.app GmobileCliTest
 Creating a new cordova project.
 $ cd gmobile-cli-test
 ```
-2. GMobile initialization
+2. Delete an existing web resource
+```sh
+$ cd www
+$ rm -r *
+$ cd ..
+```
+3. GMobile initialization
 ```sh
 $ gmobile init
 ? Directory web is not empty. Replace the contents? Yes
@@ -44,18 +59,52 @@ $ gmobile init
 ? Choose the costom plugins to apply.
 ......
 ```
-3. Delete an existing web resource
-```sh
-$ cd www
-$ rm -r *
-$ cd ..
-```
 4. Web resource build
 ```sh
 $ cd web
 $ npm install
 $ npm run build
 $ cd ..
+```
+5. Add platforms
+```sh
+$ cordova platforms add android
+```
+6. Android Studio import & run
+
+## Example `gmobile.v1`
+0. Install
+```sh
+$ npm install -g https://github.com/jimmybae/gmobile-cli.git#gmobile.v1
+```
+1. Create cordova project
+```sh
+$ cordova create gmobile-cli-test com.gmobile.cli.app GmobileCliTest
+Creating a new cordova project.
+$ cd gmobile-cli-test
+```
+2. Delete an existing web resource
+```sh
+$ cd www
+$ rm -r *
+$ cd ..
+```
+3. GMobile initialization
+```sh
+$ gmobile init
+? Directory web is not empty. Replace the contents? Yes
+[info] Web resource initialization succeeded.
+? Choose the costom plugins to apply.
+......
+```
+4. Cordova plugins add
+```sh
+$ cordova plugins add cordova-plugin-device
+Installing "cordova-plugin-device" for android
+......
+$ cordova plugins add cordova-plugin-dialogs
+Installing "cordova-plugin-dialogs" for android
+......
 ```
 5. Add platforms
 ```sh
