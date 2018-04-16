@@ -72,7 +72,7 @@ $ cordova platforms add android
 ```
 6. Android Studio import & run
 
-<img src="./screenshots/gmobile.v2.png" style="width: 300px; border: 1px solid gray;">
+<img src="./screenshots/gmobile.v2.png">
 
 ## Example `gmobile.v1`
 0. Install
@@ -114,7 +114,7 @@ $ cordova platforms add android
 ```
 6. Android Studio import & run
 
-<img src="./screenshots/gmobile.v1.png" style="width: 300px; border: 1px solid gray;">
+<img src="./screenshots/gmobile.v1.png">
 
 ## Issue
 * webpack build 시점
