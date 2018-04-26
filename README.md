@@ -104,7 +104,7 @@ gmobile init 명령의 도움말을 표시한다.
 ```sh
 $ gmobile -v
 ```
-GMobile CLI의 버전을 표시한다.
+GMobile CLI의 버전을 표시한다.  
 ![gmobile-cli-version](./screenshots/gmobile-cli-version.png)
 ### gmobile init
 ```sh
