@@ -296,3 +296,9 @@ Cordova 프로젝트의 Android 플랫폼 폴더를 Android Studio에서 import�
 
 6. Android Device에서 애플리케이션을 확인한다.  
 ![gmobile-cli-v1-example-android6](./screenshots/gmobile-cli-v1-example-android6.png)
+
+## GMobile V2
+### feature
+![gmobile.v2.feature](./screenshots/gmobile-feature.png)
+### guide upgrade
+![gmobile.v2.guide](./screenshots/gmobile-guide.png)
